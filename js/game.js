@@ -101,7 +101,7 @@ let boardContainer = document.getElementById('boardContainer');
         }
         else { 
           // changeBoxColor(xAxis, yAxis, "white");
-          board[xAxis][yAxis].innerHTML = "<img src='./images/Hole_in_Ground.png' height='85' width='85'>";
+          board[xAxis][yAxis].innerHTML = "<img src='./images/Hole_in_Ground.png' height='55' width='75'>";
         }
 
         //to make hint div visible
