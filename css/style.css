@@ -13,17 +13,50 @@
   align-items: center;
   }
 
+ 
+  
+  .hintContainer {
+    margin-top: 5rem;
+    /* position: absolute; */
+    top: 3vh;
+    left: 3vw;
+    z-index: 9999;
+  }
+  
   .hint {
     display: flex;
-    justify-content: space-around;
-    /* float: left; */
-    color: darkcyan;
-    margin-top: 5rem;
-
-  
+    align-items: center;
+    justify-content: center;
+    border: 0.2rem solid darkcyan;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.625rem #006d82ff;
+    font-family: Arial, sans-serif;
+    font-family: 'Press Start 2P', cursive, "Arial", "sans-serif";
+    font-size: 1.125rem;
+    
    
+
+    background-color: #006d82ff;
+    color: #fff;
+   
+    border-style: inset;
+    text-shadow: 3px 3px 0 #363434;
     
   }
+  
+  #foundTreasure {
+    margin-top: 1rem;
+    background-color: #cca669;
+    color: #fff;
+  }
+  
+  #stepsAway {
+    font-weight: bold;
+    margin: 0 0.3125rem;
+  }
+  
+  
 
 
 .game_container {
@@ -52,6 +85,7 @@
      justify-content:end;
      grid-template-rows: repeat(1, frr);
      margin-right: 5rem;
+     box-shadow: 0 0 0.625rem #006d82ff;
 }
 
 .boardRow {
@@ -120,7 +154,7 @@
        
       }
 
-   #foundTreasure {
+   /* #foundTreasure {
     justify-content: center;
     text-align: center;
     background-color: rgb(7, 191, 47);
@@ -129,6 +163,6 @@
     border: 2px solid green;
     border-style: inset;
    
-   }
+   } */
 
    
