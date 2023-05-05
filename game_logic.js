@@ -76,7 +76,7 @@ for (let i = 0; i < tdList.length; i++) {
     }
     else { 
       //  this.style.backgroundColor = "red"; 
-      this.style.backgroundImage = "url('../Hole_in_Ground.png' )";
+      this.style.backgroundImage = "url('/Hole_in_Ground.png' )";
       this.style.backgroundSize = "cover";
 
       this.style.position = "relative"; // add relative position to the element
