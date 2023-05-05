@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chessboard</title>
+      <!-- custom css link -->
+      <link rel="stylesheet" href="./css/game_style.css">
+      <!-- google font -->
+      <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+  
+
+
+
+
+    <div class="container">
+      <div class="info">
+        <div class="hintContainer">
+          <div class="hint" id="hint" style="display: none;">
+            <h3>INSTRUCTION :</h3>
+            <p id="stepsAway"></p><br>
+          </div>
+    
+          <div  id="foundTreasure" style="display: none;" >
+            <h3 >Yay, you Found the Treasure! <br><span><img src="./images/Treasure.png"  height='65' width='65' alt="treasure"></span> </h3>
+          </div>
+        </div>
+     </div>
+      <div class="game">
+        <div class="gameContainer">
+         
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+                <th>F</th>
+                <th>G</th>
+                <th>H</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <script src="./js/game_logic.js"></script>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th></th>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+                <th>F</th>
+                <th>G</th>
+                <th>H</th>
+                <th></th>
+              </tr>
+            </tfoot>
+          </table>
+          
+      </div>
+      <div class="background-image"></div>
+      </div>
+    </div>
+
+
+
+  </body>
+</html>
