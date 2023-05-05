@@ -70,13 +70,13 @@ for (let i = 0; i < tdList.length; i++) {
         console.log("Yay ! you found the treasure...");
         //  this.style.backgroundColor = "green"; 
           //  this.style.backgroundColor = "red"; 
-          this.style.backgroundImage = "url('../Treasure.png' )";
+          this.style.backgroundImage = "url('./Treasure.png')";
           this.style.backgroundSize = "cover";
          
     }
     else { 
       //  this.style.backgroundColor = "red"; 
-      this.style.backgroundImage = "url('/Hole_in_Ground.png' )";
+      this.style.backgroundImage = "url('./Hole_in_Ground.png')";
       this.style.backgroundSize = "cover";
 
       this.style.position = "relative"; // add relative position to the element
