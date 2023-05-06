@@ -6,7 +6,7 @@ table {
     width: 60%;
     height: 60%;
     table-layout: fixed;
-    border-collapse: collapse;
+  
   }
 
   td {
@@ -34,19 +34,20 @@ table {
 
   /* Set the container to fill the entire viewport */
 .container {
-    
+    justify-content: center;
     display: flex;
     flex-direction: row;
     height: 100%;
     background-color: rgba(0, 109, 130, 1);
-   
+    z-index: 1;
     position: relative;
+    /* Task : for mobile view relative and for web view absolute */
     width: 100%;
     max-width: auto;
     margin: 0 auto;
 
     background-size: cover;
-    z-index: 1;
+   
   }
   
   /* Set the game section to take up 50% of the width */
@@ -55,37 +56,42 @@ table {
     height: 100%;
     /* border: 1px solid black; */
 
+    justify-content: end;
+ 
     position: relative;
     width: 100%;
-    max-width: 1000px; /* adjust as needed */
+    max-width: 100%; /* adjust as needed */
     margin: auto;
+    background-size: cover;
+    
   }
 
 
 .gameContainer {
-    margin-left: 30%;
+    margin-left: 20%;
     margin-top: 24%;
     position: relative;
     width: 100%;
-    padding-bottom: 100%; /* set to the same value as width to create a square */
+    padding-bottom: 80%; /* set to the same value as width to create a square */
     overflow: hidden;
-   
+    z-index: 1;
     position: relative;
-     z-index: 1;
 }
 
 
 .background-image {
     position: absolute;
+   
     top: 0;
     left: 0;
-    background-image: url('./TreassureIsland.png');
+    background-image: url('../images/TreassureIsland.png');
     background-repeat: no-repeat;
     background-size: cover; 
     width: 100%;
     height: 100%;
     z-index: 0;
   }
+  /* stepsAway text image */
   .text-layer {
     position: absolute;
     top: 30%;
@@ -93,7 +99,7 @@ table {
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: bold;
-    color: whitesmoke;
+    color: rgb(255, 248, 246);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
 
@@ -117,7 +123,7 @@ table {
     margin-left: 5rem;
     /* position: absolute; */
     width: 70%;
-    z-index: 9999;
+    z-index: 2;
   }
   
   .hint {
@@ -176,11 +182,30 @@ table {
       flex-direction: column;
       width: 170%;
       height: 150%;
+      justify-content: center;
+
+      
+        /* 
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(0, 109, 130, 1);
+        z-index: 1; */
+        /* Remove position: relative and add min-height: 100vh */
+        min-height: 100vh;
+        /* Task : for mobile view relative and for web view absolute */
+        /* width: 100%;
+        max-width: auto;
+        margin: 0 auto;
+        background-size: cover; */
+      
+      
+
     }
   
     .game, .info {
       flex: 0 0 auto;
-      height: 50%;
+      height: 100%;
+      width: 100%;
     }
   }
 
@@ -207,8 +232,6 @@ table {
       padding: 0 10px;
     }
 
-    .hintContainer, .hint {
-        width: 50%;
-    }
+    
 
   }
