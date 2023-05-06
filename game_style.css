@@ -34,12 +34,13 @@ table {
 
   /* Set the container to fill the entire viewport */
 .container {
+    z-index: 1;
     justify-content: center;
     display: flex;
     flex-direction: row;
     height: 100%;
     background-color: rgba(0, 109, 130, 1);
-    z-index: 1;
+    
     position: relative;
     /* Task : for mobile view relative and for web view absolute */
     width: 100%;
@@ -57,7 +58,7 @@ table {
     /* border: 1px solid black; */
 
     justify-content: end;
- 
+
     position: relative;
     width: 100%;
     max-width: 100%; /* adjust as needed */
@@ -68,20 +69,20 @@ table {
 
 
 .gameContainer {
+    z-index: 1;
     margin-left: 20%;
     margin-top: 24%;
     position: relative;
     width: 100%;
     padding-bottom: 80%; /* set to the same value as width to create a square */
     overflow: hidden;
-    z-index: 1;
     position: relative;
 }
 
 
 .background-image {
+     z-index: 0;
     position: absolute;
-   
     top: 0;
     left: 0;
     background-image: url('../images/TreassureIsland.png');
@@ -89,7 +90,7 @@ table {
     background-size: cover; 
     width: 100%;
     height: 100%;
-    z-index: 0;
+   
   }
   /* stepsAway text image */
   .text-layer {
